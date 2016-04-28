@@ -6,7 +6,7 @@ extractItems = []
 browser = webdriver.Firefox()
 browser.get('http://markets.wsj.com/?mod=Homecle_MDW_MDC')
 search_box = browser.find_element_by_id("globalHatSearchInput")
-search_box.send_keys('Tesla')
+search_box.send_keys('_keyword')
 req = browser.find_element_by_css_selector('.button-search').click()
 
 def getPageUrl(elementLinks):
@@ -46,7 +46,6 @@ while True:
         element = browser.find_element_by_link_text('Next')
         element.click()
     except NoSuchElementException:
-        # print("Not working for this url: "+url)
         break
         second_browser.close()
         browser.close()
