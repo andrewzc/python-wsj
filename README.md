@@ -1,4 +1,3 @@
-# python-wsj
+## Wall Street Journal Scraping Tool
 
-## Article-WSJ
-##### Script that allows the extraction of all articles based on user keyword search in the Wall Street Journal archive.
+#### Python script made for scraping WSJ articles based on Selenium framework.
